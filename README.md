@@ -1,7 +1,9 @@
 **🚀 Highly Available Amazon EKS Cluster with Terraform**
+
 This repository provides a complete Infrastructure-as-Code (IaC) solution to deploy a Highly Available, Secure, and Scalable Amazon EKS Cluster using Terraform. It is designed for production-grade Kubernetes workloads on AWS, following best practices in cloud-native architecture and DevOps.
 
 **📌 Key Features**
+
 Multi-AZ High Availability: EKS control plane and worker nodes span multiple Availability Zones.
 Secure Networking: Custom VPC with public/private subnets, NAT gateways, and routing.
 IAM Integration: Fine-grained IAM roles and policies for Kubernetes components and users.
@@ -18,11 +20,13 @@ kubectl, aws-cli
 
 **📋 Architecture Overview**
 
+
 +---------------------------+
 |     Terraform Scripts     |
 +---------------------------+
             |
             v
+
 +---------------------------+
 |     AWS Infrastructure    |
 |  - VPC (Multi-AZ)         |
@@ -33,6 +37,7 @@ kubectl, aws-cli
 +---------------------------+
 
 **✅ Benefits**
+
 By following this setup, your EKS cluster will be:
 
 Highly Available: Resilient across multiple Availability Zones.
@@ -53,6 +58,7 @@ Plan and Apply
 
 
 **📎 Prerequisites**
+
 AWS Account with appropriate permissions
 Terraform CLI installed
 kubectl and aws-cli configured
@@ -60,6 +66,7 @@ Backend S3 bucket and DynamoDB table (optional but recommended)
 
 
 **📈 Future Enhancements**
+
 Add support for Fargate profiles
 Integrate with GitOps tools (e.g., ArgoCD, Flux)
 Enable service mesh (e.g., Istio, Linkerd)
