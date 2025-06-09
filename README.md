@@ -18,23 +18,6 @@ Kubernetes
 kubectl, aws-cli
 
 
-**📋 Architecture Overview**
-
-
-+---------------------------+
-|     Terraform Scripts     |
-+---------------------------+
-            |
-            v
-
-+---------------------------+
-|     AWS Infrastructure    |
-|  - VPC (Multi-AZ)         |
-|  - EKS Control Plane      |
-|  - Managed Node Groups    |
-|  - IAM Roles & Policies   |
-|  - S3 + DynamoDB Backend  |
-+---------------------------+
 
 **✅ Benefits**
 
